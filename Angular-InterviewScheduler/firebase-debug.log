@@ -1,0 +1,129 @@
+[debug] [2025-03-13T05:20:48.920Z] ----------------------------------------------------------------------
+[debug] [2025-03-13T05:20:48.926Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-03-13T05:20:48.927Z] CLI Version:   13.34.0
+[debug] [2025-03-13T05:20:48.928Z] Platform:      win32
+[debug] [2025-03-13T05:20:48.929Z] Node Version:  v18.20.7
+[debug] [2025-03-13T05:20:48.932Z] Time:          Thu Mar 13 2025 10:50:48 GMT+0530 (India Standard Time)
+[debug] [2025-03-13T05:20:48.933Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-13T05:20:48.951Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-13T05:20:48.954Z] > authorizing via signed-in user (naveenmalave@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Angular\interveiw-Scheduler
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-03-13T05:21:24.145Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:24.146Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:24.149Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-13T05:21:24.149Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"interview-scheduler-naveen","name":"interview-scheduler-naveen"}
+[debug] [2025-03-13T05:21:26.114Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-03-13T05:21:26.114Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7691936363860007335"}
+[debug] [2025-03-13T05:21:26.118Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:26.118Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:26.119Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 [none]
+[debug] [2025-03-13T05:21:27.960Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 200
+[debug] [2025-03-13T05:21:27.961Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 {"name":"operations/cp.7691936363860007335"}
+[debug] [2025-03-13T05:21:28.470Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-03-13T05:21:28.471Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:28.471Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:28.472Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 [none]
+[debug] [2025-03-13T05:21:30.294Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 200
+[debug] [2025-03-13T05:21:30.295Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7691936363860007335 {"name":"operations/cp.7691936363860007335","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"336081920698","projectId":"interview-scheduler-naveen","lifecycleState":"ACTIVE","name":"interview-scheduler-naveen","createTime":"2025-03-13T05:21:27.910176Z"}}
+[debug] [2025-03-13T05:21:30.302Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:30.302Z] Checked if tokens are valid: true, expires at: 1741844213583
+[debug] [2025-03-13T05:21:30.303Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/interview-scheduler-naveen:addFirebase [none]
+[debug] [2025-03-13T05:21:31.040Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/interview-scheduler-naveen:addFirebase 403
+[debug] [2025-03-13T05:21:31.041Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/interview-scheduler-naveen:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-13T05:21:31.045Z] Request to https://firebase.googleapis.com/v1beta1/projects/interview-scheduler-naveen:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-13T05:21:31.587Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/interview-scheduler-naveen:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2025-03-13T05:22:51.949Z] ----------------------------------------------------------------------
+[debug] [2025-03-13T05:22:51.955Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-03-13T05:22:51.956Z] CLI Version:   13.34.0
+[debug] [2025-03-13T05:22:51.957Z] Platform:      win32
+[debug] [2025-03-13T05:22:51.958Z] Node Version:  v18.20.7
+[debug] [2025-03-13T05:22:51.962Z] Time:          Thu Mar 13 2025 10:52:51 GMT+0530 (India Standard Time)
+[debug] [2025-03-13T05:22:51.962Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-13T05:22:51.985Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-13T05:22:51.987Z] > authorizing via signed-in user (naveenmalave@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Angular\interveiw-Scheduler
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-03-13T05:23:30.279Z] Checked if tokens are valid: false, expires at: 1741844213583
+[debug] [2025-03-13T05:23:30.279Z] Checked if tokens are valid: false, expires at: 1741844213583
+[debug] [2025-03-13T05:23:30.280Z] > refreshing access token with scopes: []
+[debug] [2025-03-13T05:23:30.284Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-13T05:23:30.284Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-13T05:23:30.906Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-13T05:23:30.907Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-13T05:23:30.963Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-13T05:23:30.963Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"int-naveen","name":"int-naveen"}
+[debug] [2025-03-13T05:23:33.102Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-03-13T05:23:33.103Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9187927862280499015"}
+[debug] [2025-03-13T05:23:33.107Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:33.107Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:33.108Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 [none]
+[debug] [2025-03-13T05:23:34.929Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 200
+[debug] [2025-03-13T05:23:34.929Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 {"name":"operations/cp.9187927862280499015"}
+[debug] [2025-03-13T05:23:35.435Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-03-13T05:23:35.436Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:35.437Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:35.439Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 [none]
+[debug] [2025-03-13T05:23:37.267Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 200
+[debug] [2025-03-13T05:23:37.267Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9187927862280499015 {"name":"operations/cp.9187927862280499015","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"945166916838","projectId":"int-naveen","lifecycleState":"ACTIVE","name":"int-naveen","createTime":"2025-03-13T05:23:34.510370Z"}}
+[debug] [2025-03-13T05:23:37.274Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:37.275Z] Checked if tokens are valid: true, expires at: 1741847009908
+[debug] [2025-03-13T05:23:37.276Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/int-naveen:addFirebase [none]
+[debug] [2025-03-13T05:23:37.960Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/int-naveen:addFirebase 403
+[debug] [2025-03-13T05:23:37.961Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/int-naveen:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-03-13T05:23:37.966Z] Request to https://firebase.googleapis.com/v1beta1/projects/int-naveen:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-03-13T05:23:38.127Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/int-naveen:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\malave.navanishwara\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

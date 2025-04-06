@@ -1,0 +1,59 @@
+
+<form #f1="ngForm" *ngIf="Candidates">
+    <div class="row form-group">
+        <div class="col">
+            <label for="candidateid">Candidate ID:</label>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col">
+            <input #candidateid="ngModel" type="number" class="form-control" id="candidateid" name="candidateid"
+                [(ngModel)]="Candidates.candidateid" required>
+        </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <label for="candidateName">Candidate Name:</label>
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <input #candidateName="ngModel" type="text" class="form-control" id="candidateName" name="candidateName"
+            [(ngModel)]="Candidates.candidateName" required >
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <label for="emailId">Email id:</label>
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <input #candidateid="ngModel" type="email" class="form-control" id="emailId" name="emailId"
+            [(ngModel)]="Candidates.emailId" >
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <label for="phone">Phone :</label>
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <input #phone="ngModel" type="number" class="form-control" id="phone" name="phone"
+            [(ngModel)]="Candidates.phone" required minlength="1" maxlength="5">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <label for="Resume">Resume:</label>
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+        <input #candidateid="ngModel" type="file" class="form-control" id="Resume" name="Resume"
+            [(ngModel)]="Candidates.resume" minlength="1" maxlength="5" (change)="onFileSelected($event)">
+    </div>
+</div>
+<button class="btn btn-primary" (click)="AddCandidate()">Save</button>
+</form>

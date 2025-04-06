@@ -1,0 +1,125 @@
+<h2>Add recruiter Details</h2>
+<form *ngIf="recruiter">
+<div class="row form-group">
+    <div class="col">
+  <label for="recruiterId">Recruiter Id</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="number" [(ngModel)]='recruiter.recruiterId' class="form-control" id="recruiterId" name="recruiterId">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="date">Date:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="date" [(ngModel)]='recruiter.date' class="form-control" id="date" name="date">
+    </div>
+</div>
+
+<div class="row form-group">
+    <div class="col">
+  <label for="time">time</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="time" [(ngModel)]='recruiter.time' class="form-control" id="time" name="time">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="rounds">Rounds:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="number" [(ngModel)]='recruiter.rounds' class="form-control" id="rounds" name="rounds">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="name">Name:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.name' class="form-control" id="name" name="name">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="designation">Designation:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.designation' class="form-control" id="designation" name="designation">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="emailId">email Id:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.emailId' class="form-control" id="emailId" name="emailId">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="interviewStatus">Status</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.interviewStatus' class="form-control" id="interviewStatus" name="interviewStatus">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="recomendedDesignation">Recomended Designtion:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.recomendedDesignation' class="form-control" id="recomendedDesignation" name="recomendedDesignation">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="remarks">Remarks:</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.remarks' class="form-control" id="remarks" name="remarks">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="offerLetterStatus">offerLetterStatus</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="text" [(ngModel)]='recruiter.offerLetterStatus' class="form-control" id="offerLetterStatus" name="offerLetterStatus">
+    </div>
+</div>
+<div class="row form-group">
+    <div class="col">
+  <label for="candidateId">Candidate Id</label>
+</div>
+</div>
+<div class="row form-group"> 
+    <div class="col">
+    <input type="number" [(ngModel)]='recruiter.candidateId' class="form-control" id="candidateId" name="candidateId">
+    </div>
+</div>
+<input type="submit" (click)="addRec()">
+</form>

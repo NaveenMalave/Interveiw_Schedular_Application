@@ -1,0 +1,34 @@
+<h2>Get candidates by Email</h2>
+
+<form #f1="ngForm" >
+    <div class="row form-group">
+        <div class="col">
+            <label for="candidateemail">Enter Candidate Email::</label>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col">
+            <input #candidatename="ngModel" type="text" class="form-control" id="candidateemail" name="candidateemail"
+                [(ngModel)]="CandidateEmail" required>
+        </div>
+</div>
+<button class="btn btn-primary" (click)="findCanEmail()">FIND</button>
+</form>
+<div *ngIf="candidates">
+    
+<table class="table table-hover">
+    <tr>
+        <th>Candidate Name</th>
+        <th>Candidate Email</th>
+        <th>Candidate phone</th>
+        <!-- <th>Candidate resume</th> -->
+    </tr>
+    <tr *ngFor="let Cand of candidates">
+       
+     <td>{{Cand.candidateName}}</td>
+     <td>{{Cand.emailId}}</td>
+     <td>{{Cand.phone}}</td>
+    <!-- <td>{{Candidate.resume}}</td></tr> -->
+    </tr>
+</table>
+</div>

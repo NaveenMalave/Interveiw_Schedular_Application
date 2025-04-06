@@ -1,0 +1,36 @@
+<h2>Get candidates by Name </h2>
+<div class="col">
+    <button class="btn btn-danger" (click)="logout()">LogOff</button>
+</div>
+<form #f1="ngForm" >
+    <div class="row form-group">
+        <div class="col">
+            <label for="candidatename">Enter Candidate Name::</label>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col">
+            <input #candidatename="ngModel" type="text" class="form-control" id="candidatename" name="candidatename"
+                [(ngModel)]="CandidateName" required>
+        </div>
+</div>
+<button class="btn btn-primary" (click)="findCanName()">FIND</button>
+</form>
+<div *ngIf="candidates">
+    
+<table class="table table-hover">
+    <tr>
+        <th>Candidate Name</th>
+        <th>Candidate Email</th>
+        <th>Candidate phone</th>
+        <!-- <th>Candidate resume</th> -->
+    </tr>
+    <tr *ngFor="let Cand of candidates">
+       
+     <td>{{Cand.candidateName}}</td>
+     <td>{{Cand.emailId}}</td>
+     <td>{{Cand.phone}}</td>
+    <!-- <td>{{Candidate.resume}}</td></tr> -->
+    </tr>
+</table>
+</div>
